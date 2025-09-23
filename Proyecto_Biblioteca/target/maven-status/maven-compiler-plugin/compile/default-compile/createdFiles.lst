@@ -1,0 +1,5 @@
+conexion\ConexionDB.class
+Servlets\RegistroServlet.class
+com\mycompany\proyecto_biblioteca\JakartaRestConfiguration.class
+com\mycompany\proyecto_biblioteca\resources\JakartaEE10Resource.class
+Servlets\InicioServlet.class
