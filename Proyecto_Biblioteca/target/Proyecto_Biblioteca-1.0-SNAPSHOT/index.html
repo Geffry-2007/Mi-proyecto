@@ -1,0 +1,118 @@
+<!-- define que el documento es html5 y que estara en español -->
+<!DOCTYPE html>
+<html lang="es">
+<!-- en head se configuran que la pagina soporte caracteres espciales, que sea responsivo para moviles-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantalla Inicial - I.E.D Los Santos</title>
+  <!-- dentro de style se define el apartado visual de la pagina -->
+  <style>
+    /* en body se define el margen y el tipo de fuente */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    /* en header se configuro la franja roja donde aparece el nombre */
+    .header {
+      background-color: #ff2d2d;
+      padding: 80px;
+      text-align: center;
+      color: black;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    /* Este es el contenedor principal dividido en dos columnas */
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: calc(100vh - 120px);
+      background-color: white;
+    }
+    /* en left muestra la imagen de caminando.png */
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    /* configuracion de la imagen */
+    .left img {
+      max-width: 80%;
+      margin: 10px;
+    }
+    /* el .rigth contiene los botones de registro y inicio de sesion */
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 20px;
+    }
+    /* En button podemos definir el estilo de los botones */
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 300px;
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    /* aqui se define el color del boton blanco con un borde negro */
+    .btn-registrar {
+      background-color: white;
+      border: 2px solid #000;
+    }
+    /* boton rojo con un texto blanco */
+    .btn-iniciar {
+      background-color: #ff2d2d;
+      color: white;
+    }
+    /* se configura la imagen avatar.png de los botones */
+    .button img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: #ddd;
+      padding: 3px;
+    }
+    /* cuando el usuario pasa el raton por el boton baja la opacidad */
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+    <!-- en este apartado podemos poner el titulo en la franja roja -->
+  <div class="header">
+    INSTITUCIÓN EDUCATIVA LOS SANTOS<br>
+    DONDE SACAMOS A RELUCIR LAS MENTES MAESTRAS
+  </div>
+<!-- permite colocar la imagen caminando.png -->
+  <div class="container">
+    <div class="left">
+      <img src="caminando.png" alt="Estudiantes caminando">
+    </div>
+    <!-- en este apartado podremos colocar las imagenes de los botones -->
+    <div class="right">
+        <a href="registro.jsp" class="button btn-registrar">
+        <img src="avatar.png" alt="icono usuario"> REGISTRARSE
+        </a>
+
+        <a href="inicio.jsp" class="button btn-iniciar">
+        <img src="avatar.png" alt="icono usuario"> INICIAR SESIÓN
+        </a>
+ 
+    </div>
+  </div>
+</body>
+</html>

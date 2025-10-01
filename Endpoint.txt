@@ -1,0 +1,3 @@
+GET http://localhost:8080/Proyecto_Biblioteca/
+GET http://localhost:8080/Proyecto_Biblioteca/registro.jsp
+GET http://localhost:8080/Proyecto_Biblioteca/inicio.jsp
